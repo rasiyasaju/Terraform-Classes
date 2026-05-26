@@ -1,0 +1,14 @@
+mame: Rasiya Saju CI
+on:
+  workflow_dispatch:
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - uses : actions/checkout@v4
+        - name: Run a one-line script
+          run: echoo Hello, Github Actions!
+        - name: Run a multi-line script
+          run: /
+            echo Add other actions to build,
+            echo test,  and deploy your project.
