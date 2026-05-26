@@ -1,0 +1,17 @@
+name: Rasiya Assignment CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: create a directory
+        run: mkdir rasi
+
+      - name: create a file
+        run: cd rasi && touch rasassi.txt
