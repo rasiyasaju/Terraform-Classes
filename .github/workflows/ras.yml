@@ -1,4 +1,4 @@
-mame: Rasiya Saju CI
+name: Rasiya Saju CI
 on:
   workflow_dispatch:
   jobs:
